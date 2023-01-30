@@ -3,7 +3,7 @@
 # jdcastro@unweb.co
 
 function create() {
-    echo "creando proyecto $1 tipo wordpress simple"
+    echo "creando proyecto $1 tipo wordpress"
     mkdir $1
     cd $1
     wp core download --locale=es_ES --force
