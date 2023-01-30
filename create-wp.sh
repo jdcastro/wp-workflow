@@ -7,6 +7,11 @@ function create() {
     mkdir $1
     cd $1
     wp core download --locale=es_ES --force
+    # alternative: 
+    # wget -c https://es.wordpress.org/latest-es_ES.tar.gz
+    # tar  -xzf latest-es_ES.tar.gz
+    # rm latest-es_ES.tar.gz
+    # mv wordpress $1
     for j in ${list[@]}
     do
         printf "Instalando Plugins $j"
